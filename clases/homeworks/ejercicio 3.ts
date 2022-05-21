@@ -3,7 +3,7 @@ let tennisPoints: number[] = [15, 30, 40];
 let anotherWay: Array<number> = [15, 30, 40];
 
 // Array + Any
-let dynamicList: any[] = ["Franco", 26, true];
+let dynamicList: any[] = ["Franco", 26, true, 'ocho'];
 
 // Tuple
 let person: [string, number] = ["Franco", 26];

@@ -21,12 +21,12 @@ class Person {
     }
   }
   
-  const student = new Student("Franco", 26, true);
+  const student = new Student("Franco", 26, false);
   
-  student.getFullInfo(); // "Franco (26 years old) - not regular"
-  student.name; // Property 'name' is protected and only accessible within class 'Person' and its subclasses
-  student.age; // Property 'age' is protected and only accessible within class 'Person' and its subclasses.
-  student.regular; // Property 'regular' is private and only accessible within class 'Student'
+  console.log(student.getFullInfo()); // "Franco (26 years old) - not regular"
+  // student.name; // Property 'name' is protected and only accessible within class 'Person' and its subclasses
+  // student.age; // Property 'age' is protected and only accessible within class 'Person' and its subclasses.
+  // student.regular; // Property 'regular' is private and only accessible within class 'Student'
 
 //proba como cambiar los modificadores de atributos de la clase!
   export {}

@@ -1,11 +1,11 @@
 // Null
 let nullExample: null = null; // Solo puede tomar valor "null"
-let numberExample: number = null; // Pero el valor "null" podemos asignarlo 
+let numberExample: number = 0; // Pero el valor "null" podemos asignarlo 
                                 // a cualquier variable
  
 // Undefined
 let undefinedExample: undefined = undefined; // Solo puede tomar valor "undefined"
-let stringExample: string = undefined // Pero el valor "undefined" podemos asignarlo 
+let stringExample: string = 'undefined' // Pero el valor "undefined" podemos asignarlo 
                                      // a cualquier variable
 
 //proba cambiando las opciones del tsconfig.json
@@ -22,11 +22,16 @@ function noImplicitType(firstArg, secondArg) {
   noImplicitType(1,2);
   noImplicitType("Franco", "Etcheverri");
   noImplicitType(true, null);
-
-  // Any
+  
+// Any
 let ejemploAny: any = "Matias";
 ejemploAny = 29;
 ejemploAny = null;
+
+//Declarando la variable
+let nueVar; //-----> sigue siendo any
+nueVar = 2
+nueVar = 'asdf'
 
 // Unknown
 let idk: unknown = "Matias";
@@ -43,13 +48,13 @@ let str1: string = anyValue; // Todo OK, puedo asignarlo
 
 let str3: string = unkValue as string; // Explicit cast
 
-anyValue.metodo(); // Todo OK, compila. Falla en tiempo de ejecución si el método no existe
+// anyValue.metodo(); // Todo OK, compila. Falla en tiempo de ejecución si el método no existe
 
 // unkValue.method(); // Error: no lo permite
 
 let iDontKnow: unknown = "typescript";
 
 //ejercicio
-let nowIKnow: string = iDontKnow; //utiliza el casteo explicito para asignarle a nowIKnow un string;
+let nowIKnow: string = iDontKnow as string; //utiliza el casteo explicito para asignarle a nowIKnow un string;
 
 export {}

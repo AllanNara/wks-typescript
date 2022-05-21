@@ -13,7 +13,8 @@ interface Persona {
 
 let franco: Persona = {
     nombre: "Franco",
-    edad: 27
+    edad: 27,
+    // otrostring: 'string'
 }
 
 interface Estudiante extends Persona {
